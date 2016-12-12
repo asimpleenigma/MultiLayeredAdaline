@@ -57,7 +57,7 @@ Here is a proof that that the backpropagation alogrithm actually finds the error
 
 ![alt text](/BackPropagationProof.jpg)
 
-variable legend:
+###variable legend:
 
 n; net value.
 
