@@ -54,7 +54,9 @@ The configurations of the network are very flexible. Any number of layers, neuro
 
 
 Here is a proof that that the backpropagation alogrithm actually finds the error gradient.
+
 ![alt text][/BackPropagationProof.jpg]
+
 variable legend:
 n; net value
 A; activation function
