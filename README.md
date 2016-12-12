@@ -38,10 +38,18 @@ The configurations of the network are very flexible. Any number of layers, neuro
               This is false by default.
               
     Methods:
-        
+        ''train''  Adjusts weights
+            'tolerance' is acceptable mean square error.
+            'goal' is acceptable portion classified correctly (classifying only)
+            
+        ''Evaluate''
+            Takes input values in an array or list, and returns output values in an array.
+                If inhibit_classify, the returned outputs will not be put thru the step function, even if self._classify==True.
 
  TrainingData is a class to store data to be passed to the 'train' method.
      ''training_data'' the inputs to be trained on and their corresponding desired outputs.
            must be: 3-tuple; (title, inputs, outputs).
-                  Where inputs and outputs are 2-D arrays.
+                  Where inputs and outputs are 2-D arrays where
+                        rows = number of input vectors to evaluate,
+                        columns = number of input/output nodes.
 
