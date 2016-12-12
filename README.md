@@ -52,3 +52,6 @@ The configurations of the network are very flexible. Any number of layers, neuro
                         rows = number of input vectors to evaluate,
                         columns = number of input/output nodes.
 
+
+Here is a proof that that the backpropagation alogrithm actually finds the error gradient.
+
