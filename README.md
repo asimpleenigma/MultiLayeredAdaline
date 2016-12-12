@@ -5,7 +5,7 @@ Backpropagating networks are considered one of the best off-the-shelf general pu
 
 The configurations of the network are very flexible. Any number of layers, neurons, or activation functions can be specified.
 
-''LayeredNetwork''
+    ''LayeredNetwork''
     This class represents layers of n neurons and the connections between adjacent layers,
             as a series of n-dimensional vectors and n x m matrices between vector spaces of vectors adjacent in the series.
         Each layer is determined by applying an activation function to each neuron of the previous layer,
@@ -15,7 +15,7 @@ The configurations of the network are very flexible. Any number of layers, neuro
             Activation functions are also translated horizontally to adjust each neurons firing threshold,
                 represented by the connections from an invisible bias node whose activation is always 1.
      
-    Attributes:
+      Attributes:
       ''nInputs'' :: the dimension of network input.
               must be: integer
 
@@ -46,9 +46,8 @@ The configurations of the network are very flexible. Any number of layers, neuro
             Takes input values in an array or list, and returns output values in an array.
                 If inhibit_classify, the returned outputs will not be put thru the step function, even if self._classify==True.
 
- TrainingData is a class to store data to be passed to the 'train' method.
-     ''training_data'' the inputs to be trained on and their corresponding desired outputs.
-           must be: 3-tuple; (title, inputs, outputs).
+    ''TrainingData'' is a class to store data to be passed to the 'train' method.
+      input must be: 3-tuple; (title, inputs, outputs).
                   Where inputs and outputs are 2-D arrays where
                         rows = number of input vectors to evaluate,
                         columns = number of input/output nodes.
