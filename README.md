@@ -58,10 +58,16 @@ Here is a proof that that the backpropagation alogrithm actually finds the error
 ![alt text](/BackPropagationProof.jpg)
 
 variable legend:
+
 n; net value.
+
 A; activation function.
+
 d; desired output. 
+
 e; error.
+
 w; weight.
+
 s; sensitivity.
 
