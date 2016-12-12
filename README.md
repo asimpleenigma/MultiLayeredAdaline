@@ -3,7 +3,7 @@ A Back-Propagating Neural Network for Supervised Machine Learning.
 
 Backpropagating networks are considered one of the best off-the-shelf general purpose machine learning methods. This program takes an input vector and puts it thru a series of alternating linear transformations and sigmoid functions to produce an output. The parameters of the linear transformations are adjusted with on-line supervised training using gradient decent to minimize the squared error vector.
 
-The configurations of the network are very flexible. Any number of layers, neurons, or activation functions can be specified.
+The configurations of the network are very flexible. Any number of layers, neurons, and activation functions can be specified.
 
     ''LayeredNetwork''
     This class represents layers of n neurons and the connections between adjacent layers,
